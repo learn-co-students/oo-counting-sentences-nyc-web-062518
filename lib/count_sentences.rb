@@ -27,10 +27,10 @@ class String
       i += 1
     end
 
-    # case char_array[-1]
-    #   when ".", "!", "?"
-    #     count += 1
-    # end
+    case char_array[-1]
+      when ".", "!", "?"
+        count += 1
+    end
     count
   end
 
