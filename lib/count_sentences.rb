@@ -24,18 +24,15 @@ class String
         when ". ", "! ", "? "
           count += 1
       end
-      i +=1
-
+      i += 1
     end
 
-    case char_array[-1]
-      when ".", "!", "?"
-        count += 1
-    end
+    # case char_array[-1]
+    #   when ".", "!", "?"
+    #     count += 1
+    # end
     count
   end
 
 
 end
-
-# "Hello, my name is Daniel! Yes!".count_sentences
