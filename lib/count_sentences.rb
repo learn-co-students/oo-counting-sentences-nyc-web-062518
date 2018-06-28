@@ -33,7 +33,10 @@ class String
 
 
   def count_sentences
-    self.split(/\W+/).count
+    array = self.split(/\.|\? |!/)
+    array.delete_if {|sentence| sentence == "" }
+    array.length
+    # self.split(/\W+/).count    //Removes empty sentences but does not remove strings of ",!?"s.
   end
 
 end
